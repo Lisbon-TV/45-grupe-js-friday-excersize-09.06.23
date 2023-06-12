@@ -68,5 +68,15 @@ console.log(number);
 // * * * * * * * * * * *
 // * * * * * * * * * * *
 
+let krastine = '';
+
+for(let i = 0; i <= 10_000; i++ ) {
+    krastine += '*';
+    if(i % 100 === 0)  {  
+        krastine += '<br/>';
+    }
+}
+
+console.log(krastine);
 
 // 5) Prieš tai nupieštam kvadratui nupieškite raudonas istrižaines.
