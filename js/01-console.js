@@ -1,5 +1,5 @@
 console.clear();
-
+console.log('...........');
 
 // 1) Naršyklėje nupieškite linija iš 400 “*”. 
 // Programiškai “suskaldykite” žvaigždutes taip, 
@@ -45,6 +45,18 @@ console.log(randomNo);
 // Po paskutinio skaičiaus kablelio neturi būti. 
 // Jeigu reikia, panaudokite css, kad visi rezultatai matytusi ekrane.
 
+console.log();
+
+let number = '';
+let lastNumber = ''; // ?
+for(let i = 1; i <= 3000; i++ ) {
+    number += `${i},`; 
+    if(i % 77 === 0)  {  // nesigauna!  2926 / 77 = 38, last number
+        number += ',';
+    }
+}
+
+console.log(number);
 
 // 4) Nupieškite kvadratą iš “*”, kurio kraštines sudaro 100 “*”. 
 // Panaudokite css stilių, kad kvadratas ekrane atrodytų kvadratinis.
