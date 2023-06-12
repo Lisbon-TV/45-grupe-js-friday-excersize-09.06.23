@@ -6,18 +6,36 @@ console.clear();
 // kad vienoje eilutėje nebūtų daugiau nei 50 “*”.
 
 let line = '';
-for(let i = 0; i <= 400; i = i +1 ) {
+for(let i = 0; i <= 400; i++ ) {
     line += '*';
-    if(i % 50 === 0)   // vienoje eiluteje ne daugiau nei 50!
-        line += '</br>';
-
+    if(i % 50 === 0)  {  
+        line += '<br/>';
+    }
 }
 
 console.log(line);
+// document.write(line); // paklausti, radau komentaruose!
 
 
 // 2) Sugeneruokite 300 atsitiktinių skaičių nuo 0 iki 300, 
 // atspausdinkite juos atskirtus tarpais ir suskaičiuokite
+// kiek tarp jų yra didesnių už 150.  
+
+
+console.log ();
+
+let randomNo = '';
+let greaterNo = '';
+
+for(let i = 0; i <= 300; i++ ) {
+    randomNo += `${i}</br>`; 
+    if(i >= 0) {  
+        greaterNo = randomNo;
+    }
+}
+
+console.log(randomNo);
+
 // kiek tarp jų yra didesnių už 150.  
 // Skaičiai didesni nei 275 turi būti raudonos spalvos.
 
@@ -28,7 +46,8 @@ console.log(line);
 // Jeigu reikia, panaudokite css, kad visi rezultatai matytusi ekrane.
 
 
-// 4) Nupieškite kvadratą iš “*”, kurio kraštines sudaro 100 “*”. Panaudokite css stilių, kad kvadratas ekrane atrodytų kvadratinis.
+// 4) Nupieškite kvadratą iš “*”, kurio kraštines sudaro 100 “*”. 
+// Panaudokite css stilių, kad kvadratas ekrane atrodytų kvadratinis.
 // * * * * * * * * * * *
 // * * * * * * * * * * *
 // * * * * * * * * * * *
