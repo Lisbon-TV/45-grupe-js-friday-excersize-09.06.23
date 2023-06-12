@@ -5,6 +5,16 @@ console.clear();
 // Programiškai “suskaldykite” žvaigždutes taip, 
 // kad vienoje eilutėje nebūtų daugiau nei 50 “*”.
 
+let line = '';
+for(let i = 0; i <= 400; i = i +1 ) {
+    line += '*';
+    if(i % 50 === 0)   // vienoje eiluteje ne daugiau nei 50!
+        line += '</br>';
+
+}
+
+console.log(line);
+
 
 // 2) Sugeneruokite 300 atsitiktinių skaičių nuo 0 iki 300, 
 // atspausdinkite juos atskirtus tarpais ir suskaičiuokite
